@@ -131,3 +131,17 @@ a {
   cursor: pointer;
   transition: 0.3s;
 }
+/* Стили для изменения цвета при наведении */
+.text-danger-hover:hover {
+  color: #dc3545 !important; /* Цвет красный */
+}
+
+.btn-danger-hover:hover {
+  color: #fff; /* Цвет текста белый */
+  background-color: #dc3545; /* Цвет фона красный */
+  border-color: #dc3545; /* Цвет границы красный */
+}
+
+.text-custom-hover:not(:hover) {
+  color: #fff !important; /* Цвет белый */
+}
