@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,34 +17,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Hello, world!</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-secondary-subtle nav-underline" data-bs-theme="dark">
-      <div class="container-fluid">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-secondary-subtle nav-underline section" data-bs-theme="dark">
+    <div class="container-fluid">
         <a class="navbar-brand text-danger-hover" href="#">
-          <img src="img/01eefe3662a40757d082404a19bce33b.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          <span class="logo"> Библиотека One Piece</span>
+            <img src="img/01eefe3662a40757d082404a19bce33b.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <span class="logo"> Библиотека One Piece</span>
         </a>
         <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav ">
-            <a class="nav-link active text-custom-hover text-danger-hover" aria-current="page" href="index.html">Главная</a>
-            <a class="nav-link text-custom-hover text-danger-hover" href="anime.html">Аниме</a>
-            <a class="nav-link text-custom-hover text-danger-hover" href="manga.html">Манга</a>
-            <a class="nav-link text-custom-hover text-danger-hover" href="characters.html">Персонажи</a>
-          </ul>
+            <ul class="navbar-nav ">
+                <a class="nav-link active text-custom-hover text-danger-hover" aria-current="page" href="index.html">Главная</a>
+                <a class="nav-link text-custom-hover text-danger-hover" href="anime.html">Аниме</a>
+                <a class="nav-link text-custom-hover text-danger-hover" href="manga.html">Манга</a>
+                <a class="nav-link text-custom-hover text-danger-hover" href="characters.html">Персонажи</a>
+            </ul>
         </div>
-      </div>
-    </nav>
-    
-      <!-- ... (остальной код без изменений) -->
+    </div>
+</nav>
 
-      <footer class="text-light container" style="background-color: #1f1f1f; border-radius: 15px;">
-        <div class="container py-4 rounded">
-            <div class="row  justify-content-around">
-              <div class="col-md-6">
+<div class="container mt-4 section">
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="img/manga/toms/tom1.jpg" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Том 1</h5>
+                    <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#text1" aria-expanded="false" aria-controls="text1">
+                        Главы
+                    </button>
+                    <div class="collapse" id="text1">
+                        <a class="d-block mt-3 mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 1 - На заре приключений</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 2 - Луффи Соломенная шляпа</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 3 - Первая встреча: Охотник на пиратов Зоро</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 4 - Капитан Морского дозора Топорукий Морган</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 5 - Король пиратов и великий мастер меча</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 6 - Два пирата</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 7 - Друзья</a>
+                        <a class="d-block text-danger-hover" href="manga/chapter-1.html">Глава 8 - Нами</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Добавьте аналогичные блоки для остальных картинок -->
+        <div class="col">
+            <div class="card">
+                <img src="img/manga/toms/tom1.jpg" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Том 1</h5>
+                    <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#text2" aria-expanded="false" aria-controls="text2">
+                        Главы
+                    </button>
+                    <div class="collapse" id="text2">
+                        <a class="d-block mt-3 mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 1 - На заре приключений</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 2 - Луффи Соломенная шляпа</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 3 - Первая встреча: Охотник на пиратов Зоро</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 4 - Капитан Морского дозора Топорукий Морган</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 5 - Король пиратов и великий мастер меча</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 6 - Два пирата</a>
+                        <a class="d-block mb-2 text-danger-hover" href="manga/chapter-1.html">Глава 7 - Друзья</a>
+                        <a class="d-block text-danger-hover" href="manga/chapter-1.html">Глава 8 - Нами</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/manga/toms/tom1.jpg" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок 2</h5>
+                    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#text3" aria-expanded="false" aria-controls="text3">
+                        Подробнее
+                    </button>
+                    <div class="collapse" id="text3">
+                        <p>Текст, который раскрывается при нажатии на кнопку "Подробнее".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card">
+              <img src="img/manga/toms/tom1.jpg" class="card-img-top" alt="Image 3">
+              <div class="card-body">
+                  <h5 class="card-title">Заголовок 2</h5>
+                  <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#text4" aria-expanded="false" aria-controls="text4">
+                      Подробнее
+                  </button>
+                  <div class="collapse" id="text4">
+                      <p>Текст, который раскрывается при нажатии на кнопку "Подробнее".</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card">
+            <img src="img/manga/toms/tom1.jpg" class="card-img-top" alt="Image 3">
+            <div class="card-body">
+                <h5 class="card-title">Заголовок 2</h5>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#text5" aria-expanded="false" aria-controls="text5">
+                    Подробнее
+                </button>
+                <div class="collapse" id="text5">
+                    <p>Текст, который раскрывается при нажатии на кнопку "Подробнее".</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Повторите эти блоки для остальных картинок -->
+    </div>
+</div>
+
+<footer class="text-light container" style="background-color: #1f1f1f; border-radius: 15px;">
+    <div class="container py-4 rounded">
+        <div class="row  justify-content-around">
+            <div class="col-md-6">
                 <ul class="list-inline text-center d-flex justify-content-between">
                     <li class="list-inline-item"><a class="text-danger-hover" href="index.html">Главная</a></li>
                     <li class="list-inline-item"><a class="text-danger-hover" href="anime.html">Аниме</a></li>
@@ -52,14 +141,14 @@
                     <li class="list-inline-item"><a class="text-danger-hover" href="characters.html">Персонажи</a></li>
                 </ul>
             </div>
-            </div>
         </div>
-        <div class="text-center p-3 rounded">
-            &copy; 2023 Библиотека One Piece
-        </div>
-      </footer>
-    
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    </div>
+    <div class="text-center p-3 rounded">
+        &copy; 2023 Библиотека One Piece
+    </div>
+</footer>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>

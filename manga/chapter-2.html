@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts link -->
+    <script src="https://kit.fontawesome.com/5bbab94089.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+      .carousel-indicator-text {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          padding: 10px;
+          background-color: rgba(173, 24, 24, 0.5);
+          color: white;
+          border-radius: 5px;
+      }
+  </style>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary-subtle nav-underline " data-bs-theme="dark">
+      <!-- Navbar content -->
+      <!-- Your navbar content here -->
+  </nav>
+
+  <div class="container section">
+      <nav aria-label="breadcrumb">
+          <!-- Breadcrumb navigation -->
+      </nav>
+
+      <h1 class="text-center">Том 1 Глава 1</h1>
+
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="chapter/chapter-1/01.jpg" class="d-block mx-auto img-fluid" alt="Первая фотография">
+              </div>
+              <div class="carousel-item">
+                  <img src="chapter/chapter-1/02.jpg" class="d-block mx-auto img-fluid" alt="Вторая фотография">
+              </div>
+              <div class="carousel-item">
+                  <img src="chapter/chapter-1/03.jpg" class="d-block mx-auto img-fluid" alt="Третья фотография">
+              </div>
+              <div class="carousel-item">
+                  <img src="chapter/chapter-1/04.jpg" class="d-block mx-auto img-fluid" alt="Четвертая фотография">
+              </div>
+              <div class="carousel-item">
+                  <img src="chapter/chapter-1/05.jpg" class="d-block mx-auto img-fluid" alt="Пятая фотография">
+              </div>
+              <div class="carousel-item">
+                  <img src="chapter/chapter-1/06.jpg" class="d-block mx-auto img-fluid" alt="Шестая фотография">
+              </div>
+          </div>
+
+          <div class="carousel-indicator-text"></div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </div>
+
+  <footer class="text-light container" style="background-color: #1f1f1f; border-radius: 15px;">
+      <!-- Your footer content here -->
+  </footer>
+
+  <!-- Bootstrap JS bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Custom script for updating the current photo indicator -->
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          var carousel = new bootstrap.Carousel(document.getElementById("carouselExample"));
+
+          function updateIndicator() {
+              var activeIndex = carousel.getActiveIndex() + 1;
+              document.querySelector(".carousel-indicator-text").innerText = "Текущая фотография: " + activeIndex;
+          }
+
+          // Update indicator on slide change
+          document.getElementById("carouselExample").addEventListener("slid.bs.carousel", updateIndicator);
+
+          // Initial update
+          updateIndicator();
+      });
+  </script>
+</body>
+
+</html>

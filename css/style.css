@@ -134,6 +134,7 @@ a {
 /* Стили для изменения цвета при наведении */
 .text-danger-hover:hover {
   color: #dc3545 !important; /* Цвет красный */
+  transition: 0.2s;
 }
 
 .btn-danger-hover:hover {
@@ -145,3 +146,4 @@ a {
 .text-custom-hover:not(:hover) {
   color: #fff !important; /* Цвет белый */
 }
+
