@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" href="../../css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle nav-underline" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-danger-hover" href="../../index.html">
+          <img src="../../img/01eefe3662a40757d082404a19bce33b.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <span class="logo"> Библиотека One Piece</span>
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ">
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover" aria-current="page" href="../../index.html">Главная</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover" href="../../anime.html">Аниме</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover" href="../../manga.html">Манга</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover active" href="../../characters.html">Персонажи</a>
+						</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+		<div class="container mb-4">
+			<nav class="section" aria-label="breadcrumb">
+					<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a class="text-danger-hover" href="../../characters.html">Персонажи</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Ророноа Зоро</li>
+					</ol>
+			</nav>
+
+			<h1 class="text-center">Ророноа Зоро</h1>
+
+			<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6" aria-label="Slide 7"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="7" aria-label="Slide 8"></button>
+				</div>
+
+				<div class="carousel-inner">
+					<div class="carousel-item height-480px active">
+							<img src="1.png" class="d-block mx-auto img-fluid" alt="Первая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="2.jpg" class="d-block mx-auto img-fluid" alt="Вторая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="3.jpg" class="d-block mx-auto img-fluid" alt="Третья фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="4.jpg" class="d-block mx-auto img-fluid" alt="Четвертая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="5.jpg" class="d-block mx-auto img-fluid" alt="Пятая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+						<img src="6.jpg" class="d-block mx-auto img-fluid" alt="Шестая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+						<img src="7.jpg" class="d-block mx-auto img-fluid" alt="Седьмая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+						<img src="8.jpg" class="d-block mx-auto img-fluid" alt="Седьмая фотография">
+					</div>
+				</div>
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- d-flex justify-content-start mt-3 -->
+			<div class="d-flex justify-content-start mt-3 overflow-auto section">
+					<img src="1.png" class="img-fluid me-2 hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="0" style="max-width: 200px; height: 200px;">
+					<img src="2.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 2" data-bs-target="#carouselExample" data-bs-slide-to="1" style="max-width: 200px; height: 200px;">
+					<img src="3.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 3" data-bs-target="#carouselExample" data-bs-slide-to="2" style="max-width: 200px; height: 200px;">
+					<img src="4.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 4" data-bs-target="#carouselExample" data-bs-slide-to="3" style="max-width: 200px; height: 200px;">
+					<img src="5.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 5" data-bs-target="#carouselExample" data-bs-slide-to="4" style="max-width: 200px; height: 200px;">
+					<img src="6.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="5" style="max-width: 200px; height: 200px;">
+					<img src="7.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="6" style="max-width: 200px; height: 200px;">
+					<img src="8.jpg" class="img-thumbnail img-fluid hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="7" style="max-width: 200px; height: auto;">
+			</div>
+			<p><h4 class="inline">Ророноа Зоро</h4> - пират, бывший охотник за головами и один из главных протагонистов One Piece.</p>
+			<p>Ророноа Зоро был первым, кто присоединился к Пиратам Соломенной Шляпы и является одним из четырёх сильнейших членов команды, а его мечта — стать величайшим мечником в мире. Из за его огромной силы и сдержанности, разительно отличающейся от легкомысленного поведения Луффи, многие зачастую принимали его за капитана команды или за первого помощника. Также, он один из пиратов, которых назвали «Худшее Поколение». 320 000 000 белли. После событий в стране Вано награда Зоро увеличилась до 1 111 000 000 белли.</p>
+		</div>
+		<div class="accordion accordion-flush container mb-2" id="accordionFlushExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed accordion-bg-button t-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						Внешность
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body accordion-bg">
+						<p class="mb-4">Зоро — мускулистый молодой человек, среднего роста с короткими зелеными волосами и слегка загорелой кожей. Его отличительная черта — это три катаны, подвешенные к харамаки с правой стороны, что позволяет ему легко вытаскивать меч своей левой рукой. В левом ухе у него висят три золотые серьги-подвески. Также, он имеет чёрную бандану, которую привязывает к руке и надевает на голову только в битвах с серьёзными противниками</p>
+						<p>Тело Зоро полностью покрыто шрамами от многочисленных битв. Самые приметные: шрам от левого плеча до правого бедра, оставленный Дракулем Михоком во время схватки в арке Барати, в которой Зоро проиграл, а также шрамы на лодыжках, полученные во время отчаянных попыток освободиться из гигантской свечи, созданной Мистером 3 в Литл Гарден (Зоро хотел отрубить себе ноги). После таймскипа у него появляется шрам на левом глазу. Как он его получил, пока неизвестно.</p>
+						<p>Другой особенностью Зоро являются его короткие зелёные волосы, из-за которых Санджи часто дразнит его Головой-травой или Маримо (японское название вида водорослей круглой формы).</p>
+						<p>Как и большинство мужчин в команде, на протяжении большей части сюжета Зоро носит одинаковую одежду, которая состоит из чёрных брюк, заправленных в чёрные сапоги, белой рубашки с тремя пуговицами на воротнике и зелёного харамаки. Время от времени он меняет свою традиционную форму, однако, в основном, ограничивается только рубашкой.</p>
+
+						<h5 class="border-bottom pb-2 mb-4">До таймскипа</h5>
+						<ul class="t-white">
+							<li class="mb-2">Во время арки Арлонг Парка он носил тёмно-синюю рубашку, украшенную голубыми волнами и спиралями. Из-за раны, полученной от Михока во время арки Барати, Зоро носил бинты, которые были видны под рубашкой.</li>
+							<li class="mb-2">Во время арки Острова Драм поначалу Зоро был без рубашки, пока не украл парку тёмно-зелёного цвета со светло-зелёным поясом и белым мехом на манжетах, капюшоне и подоле, у человека из армии Вапола.</li>
+							<li class="mb-2">Во время арки Алабасты он носил оранжевую куфию с золотым обручем на голове и белый халат с длинными рукавами, чёрными краями и узорами того же цвета. Его брюки были порваны до уровня колен.</li>
+							<li class="mb-2">Во время арки Скайпии Зоро сначала носил обычную одежду, пока не снял её после боя с небесной акулой, спасая Чоппера от съедения. После этого он носил длинную тёмно-синюю майку и очки на резинке, висящие, либо на голове, либо на шее.</li>
+							<li class="mb-2">Во время арки Water 7 он почти до самого конца носил обычную одежду и сменил её на расстёгнутую ярко-жёлтую куртку с двумя ложными карманами по бокам. Он продолжал носить её на протяжении всей арки Эниес Лобби.</li>
+							<li class="mb-2">Во время арки Пост-Эниес Лобби он носил чёрную футболку с белой эмблемой компании Галлей-Ла.</li>
+							<li class="mb-2">Вo конце арки Триллер Барка он носил открытую тёмно-серую рубашку.</li>
+							<li class="mb-2">Во время арки Архипелага Сабаоди Зоро носил открытую белую рубашку с красными вертикальными полосами.</li>
+							<li class="mb-2">Во время пребывания на острове Курайгана, после того как был отправлен туда Бартоломью Кумой, он носил открытую тёмно-зелёную рубашку. Так как Зоро был тяжело ранен, когда прибыл на остров, Перона перевязала его так, что бинты были по всему его телу.</li>
+						</ul>
+
+						<h5 class="border-bottom pb-2 mb-4">После таймскипа</h5>
+						<p>После двухлетнего перерыва, Зоро появляется с новым шрамом на левом глазу, который, предположительно, теперь ослеп, так как всегда закрыт. Мечник стал выглядеть более мускулистым, шея стала гораздо толще и сам он стал немного выше, почти такого же роста, что и Робин (188 см). Теперь он носит открытый тёмно-зелёный халат, обвязанный вокруг талии красным поясом, на котором удерживаются его мечи, и всё ту же чёрную бандану вокруг левого плеча. Зоро больше не носит рубашку, но его зелёный харамаки по-прежнему виднеется из-под халата.</p>
+						<ul class="t-white">
+							<li class="mb-2">Во время Арки Панк Хазарда он носил белую пушистую шубу для защиты от холода на замороженной стороне Панк Хазард, которую он отнял у одного из патрульных кентавров.</li>
+							<li class="mb-2">Во время Арки Дресс Розы он носил классический чёрный костюм и белую рубашку с расстегнутыми верхними пуговицами. Он также носил черные солнцезащитные очки и поддельные белые усы в качестве маскировки. Его солнцезащитные очки были уничтожены в столкновении с Адмиралом Фудзиторой. Кроме того, он отбросил усы после того, как его личность была раскрыта. После битвы с Пиратами Донкихота, Зоро снял пиджак и полностью расстегнул рубашку так, что был виден шрам на груди.</li>
+							<li class="mb-2">Во время Арки Дзо Зоро носил темно-синюю футболку с зеленым пальто и харамаки, с парой длинных черных брюк и сапог.</li>
+							<li>Во время Арки Страны Вано Зоро носил белый юката с черными деталями и зеленым рисунком на нем. Он носил темно-зеленый халат с изображением нескольких крупных, чёрных солнц поверх, и плоские сандалии.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="text-light container" style="background-color: #1f1f1f; border-radius: 15px;">
+			<div class="container py-4 rounded">
+					<div class="row  justify-content-around">
+						<div class="col-md-6">
+							<ul class="list-inline text-center d-flex justify-content-between">
+									<li class="list-inline-item"><a class="text-danger-hover" href="../../index.html">Главная</a></li>
+									<li class="list-inline-item"><a class="text-danger-hover" href="../../anime.html">Аниме</a></li>
+									<li class="list-inline-item"><a class="text-danger-hover" href="../../manga.html">Манга</a></li>
+									<li class="list-inline-item"><a class="text-danger-hover" href="../../characters.html">Персонажи</a></li>
+							</ul>
+					</div>
+					</div>
+			</div>
+			<div class="text-center p-3 rounded">
+					&copy; 2023 Библиотека One Piece
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+</html>

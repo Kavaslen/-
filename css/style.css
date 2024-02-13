@@ -155,3 +155,14 @@ a {
   color: #fff !important; /* Цвет белый */
 }
 
+.accordion-bg {
+	background-color: #161616;
+}
+
+.accordion-bg-button {
+	background-color: #1d1c1c;
+}
+
+.t-white {
+	color: white;
+}

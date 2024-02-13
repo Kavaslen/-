@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" href="../../css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle nav-underline" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-danger-hover" href="../../index.html">
+          <img src="../../img/01eefe3662a40757d082404a19bce33b.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <span class="logo"> Библиотека One Piece</span>
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ">
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover" aria-current="page" href="../../index.html">Главная</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover" href="../../anime.html">Аниме</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover" href="../../manga.html">Манга</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover active" href="../../characters.html">Персонажи</a>
+						</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+		<div class="container mb-4">
+			<nav class="section" aria-label="breadcrumb">
+					<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a class="text-danger-hover" href="../../characters.html">Персонажи</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Гол Д. Роджер</li>
+					</ol>
+			</nav>
+
+			<h1 class="text-center">Гол Д. Роджер</h1>
+
+			<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 5"></button>
+				</div>
+
+				<div class="carousel-inner">
+					<div class="carousel-item height-480px active">
+							<img src="1.png" class="d-block mx-auto img-fluid" alt="Первая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="3.jpg" class="d-block mx-auto img-fluid" alt="Третья фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="4.jpg" class="d-block mx-auto img-fluid" alt="Четвертая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="5.jpg" class="d-block mx-auto img-fluid" alt="Пятая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+						<img src="6.jpg" class="d-block mx-auto img-fluid" alt="Шестая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+						<img src="7.jpg" class="d-block mx-auto img-fluid" alt="Седьмая фотография">
+					</div>
+				</div>
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- d-flex justify-content-start mt-3 -->
+			<div class="d-flex justify-content-start mt-3 overflow-auto section">
+					<img src="1.png" class="img-fluid me-2 hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="0" style="max-width: 200px; height: 200px;">
+					<img src="3.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 3" data-bs-target="#carouselExample" data-bs-slide-to="1" style="max-width: 200px; height: 200px;">
+					<img src="4.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 4" data-bs-target="#carouselExample" data-bs-slide-to="2" style="max-width: 200px; height: 200px;">
+					<img src="5.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 5" data-bs-target="#carouselExample" data-bs-slide-to="3" style="max-width: 200px; height: 200px;">
+					<img src="6.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="4" style="max-width: 200px; height: 200px;">
+					<img src="7.jpg" class="img-thumbnail img-fluid hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="5" style="max-width: 200px; height: auto;">
+			</div>
+			<p><h4 class="inline">Гол Д. Роджер,</h4> более известен как Золотой Роджер, был Королём Пиратов, капитаном Пиратов Роджера и обладателем легендарного сокровища, «One Piece». Он также был любовником Портгас Д. Руж и 		является биологическим отцом Портгаса Д. Эйса.
+				Роджер прославился как человек, который сделал то, что никто не считал возможным - завоевал Гранд Лайн и накопил огромное состояние, но он знал, что скоро умрет от неизлечимой болезни. Он распустил свою команду, прежде чем сдаться. Мировое Правительство намеревалось публично казнить Роджера, чтобы препятствовать пиратству, но его последние слова оказали противоположное влияние. Он заявил, что любой, кто может найти его сокровище, может претендовать на титул Короля Пиратов.</p>
+			<p>Таким образом, это сделало Роджера ответственным за начало Великой Эры Пиратов.</p>
+		</div>
+		<div class="accordion accordion-flush container mb-2" id="accordionFlushExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed accordion-bg-button t-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						Внешность
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body accordion-bg">
+						<p class="mb-4">Роджер — высокий и довольно мускулистый человек, гордо идущий вперёд, даже на казнь. Наиболее выдающиеся черты его внешности это подкрученные чёрные усы, свирепый оскал и грозный взгляд. А также густые чёрные волосы и короткая плотная шея.</p>
+						<p>Как и многие другие сильные пираты, он носил длинный красный капитанский плащ. Под плащом была синяя рубашка, жёлтый пояс и тёмно-синие штаны. На шее был повязан белый шарф. Также он носил чёрные резиновые сапоги. До того, как он сдался, у него также была пиратская шляпа с его Весёлым Роджером и жёлтая пятнистая бандана. Во время битвы в Эдд Во, он носил синий жилет и жёлтый кушак. Он был одним из немногих, кто выглядел как стереотипный пират.</p>
+						<p>Как было показано во флешбэке, при первой встрече с Рэйли Роджер выглядел практически как Луффи и Эйс, вплоть до соломенной шляпы, которую сейчас носит Луффи.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="text-light container" style="background-color: #1f1f1f; border-radius: 15px;">
+			<div class="container py-4 rounded">
+					<div class="row  justify-content-around">
+						<div class="col-md-6">
+							<ul class="list-inline text-center d-flex justify-content-between">
+									<li class="list-inline-item"><a class="text-danger-hover" href="index.html">Главная</a></li>
+									<li class="list-inline-item"><a class="text-danger-hover" href="anime.html">Аниме</a></li>
+									<li class="list-inline-item"><a class="text-danger-hover" href="manga.html">Манга</a></li>
+									<li class="list-inline-item"><a class="text-danger-hover" href="characters.html">Персонажи</a></li>
+							</ul>
+					</div>
+					</div>
+			</div>
+			<div class="text-center p-3 rounded">
+					&copy; 2023 Библиотека One Piece
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+</html>

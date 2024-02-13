@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" href="../../css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle nav-underline" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-danger-hover" href="../../index.html">
+          <img src="../../img/01eefe3662a40757d082404a19bce33b.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          <span class="logo"> Библиотека One Piece</span>
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav ">
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover" aria-current="page" href="../../index.html">Главная</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover" href="../../anime.html">Аниме</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover" href="../../manga.html">Манга</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-danger-hover active" href="../../characters.html">Персонажи</a>
+						</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+		<div class="container mb-4">
+			<nav class="section" aria-label="breadcrumb">
+					<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a class="text-danger-hover" href="../../characters.html">Персонажи</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Усопп</li>
+					</ol>
+			</nav>
+
+			<h1 class="text-center">Усопп</h1>
+
+			<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6" aria-label="Slide 7"></button>
+					<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="7" aria-label="Slide 8"></button>
+				</div>
+
+				<div class="carousel-inner">
+					<div class="carousel-item height-480px active">
+							<img src="1.png" class="d-block mx-auto img-fluid" alt="Первая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="2.jpg" class="d-block mx-auto img-fluid" alt="Вторая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="3.jpg" class="d-block mx-auto img-fluid" alt="Третья фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="4.jpg" class="d-block mx-auto img-fluid" alt="Четвертая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+							<img src="5.jpg" class="d-block mx-auto img-fluid" alt="Пятая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+						<img src="6.jpg" class="d-block mx-auto img-fluid" alt="Шестая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+						<img src="7.jpg" class="d-block mx-auto img-fluid" alt="Седьмая фотография">
+					</div>
+					<div class="carousel-item height-480px">
+						<img src="8.jpg" class="d-block mx-auto img-fluid" alt="Седьмая фотография">
+					</div>
+				</div>
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+
+			<!-- d-flex justify-content-start mt-3 -->
+			<div class="d-flex justify-content-start mt-3 overflow-auto section">
+					<img src="1.png" class="img-fluid me-2 hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="0" style="max-width: 200px; height: 200px;">
+					<img src="2.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 2" data-bs-target="#carouselExample" data-bs-slide-to="1" style="max-width: 200px; height: 200px;">
+					<img src="3.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 3" data-bs-target="#carouselExample" data-bs-slide-to="2" style="max-width: 200px; height: 200px;">
+					<img src="4.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 4" data-bs-target="#carouselExample" data-bs-slide-to="3" style="max-width: 200px; height: 200px;">
+					<img src="5.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 5" data-bs-target="#carouselExample" data-bs-slide-to="4" style="max-width: 200px; height: 200px;">
+					<img src="6.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="5" style="max-width: 200px; height: 200px;">
+					<img src="7.jpg" class="img-fluid me-2 hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="6" style="max-width: 200px; height: 200px;">
+					<img src="8.jpg" class="img-thumbnail img-fluid hover" alt="Маленькая фотография 1" data-bs-target="#carouselExample" data-bs-slide-to="7" style="max-width: 200px; height: auto;">
+			</div>
+			<p><h4 class="inline">Усопп</h4> — пират и снайпер в команде пиратов Соломенной Шляпы, а также бывший капитан пиратов Усоппа. Когда он впервые появился, его часто в шутку называли «Лжецом» пиратов Соломенной Шляпы, так как «Усо» (うそ) в его имени переводится как «ложь». Он родился в деревне Сиропа и впервые упоминается его отцом, Ясоппом. Несмотря на свою обычную трусость, Усопп мечтает стать храбрым воином моря, как и его отец, и живёт каждый день, преследуя эту мечту.
+			Он четвёртый член команды, третий, кто присоединился к Луффи, а также третий, после Нами и Робин, вернувшийся в команду после ухода из неё, он сделал это в конце арки Пост-Эниес Лобби. Его первая награда BeliSymbol30 000 000 была назначена за его вымышленное имя и альтер-эго — Согекинга.[5]</p>
+			<p>Во время событий на Дресс Розе, Усопп пробудил в себе Хаки Наблюдения[16], после чего стал четвёртым в команде, кто может использовать хотя бы один вид Хаки. Его награда после арки Дресс Розы, BeliSymbol200 000 000, является огромным прыжком от изначальной, благодаря его роли «Бога» во время спасения всех игрушечных рабов в подполье Дофламинго. После событий арки Вано награда Усоппа была повышена до BeliSymbol500 000 000[17], опуская его на 6 место после Нико Робин, которая после событий Вано, все также осталась на 5 месте.</p>
+		</div>
+		<div class="accordion accordion-flush container mb-2" id="accordionFlushExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button collapsed accordion-bg-button t-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						Внешность
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body accordion-bg">
+						<p>На протяжении большей части истории, Усопп представляет собой худощавого подростка среднего роста с темноватой кожей, черными кудрявыми волосами и длинным носом, который, по-видимому, является намеком на Пиноккио, (деревянного мальчика из одноимённой сказки, у которого был такой же нос, становившийся длиннее, когда он лгал). Усопп унаследовал свой знаменитый нос от своей матери, в то время как остальные черты лица напоминают отца. Во время разделения Соломенных Шляп, после приземления на Архипелаг Боин, Усопп растолстел от переедания.</p>
+						<p class="mb-4">Обычно он носит оливково-зелёную клетчатую бандану, нарукавник в сине-белую полоску на левой руке, специальные снайперские очки (также у него есть пару простых овальных очков, которые он надевает в ситуациях, когда у него нет очков снайпера, как например, когда он впервые встретился с мугиварами или когда его очки снайпера были украдены Мистером 2) и коричневый комбинезон с белым поясом без рубашки под ним. Также он носит с собой жёлтый ранец, в котором хранит все свои инструменты и гаджеты. Время от времени, он менял свою стандартную форму, но в основном только для приспособления к климату какого-либо острова.</p>
+						<p></p>
+						<p></p>
+
+						<h5 class="border-bottom pb-2 mb-4">До таймскипа</h5>
+						<ul class="t-white mb-4">
+							<li class="mb-2">Во время арки Острова Драм Усопп носил коричневую куртку, с верёвочными застёжками, двойной бледно-жёлтой полосой вокруг обеих рукавов и белым мехом на манжетах, капюшоне и подоле, серые штаны с узором в виде тёмно-синих полумесяцев, жёлтые перчатки и сапоги.</li>
+							<li class="mb-2">Во время арки Алабасты он был одет в жёлтую куфию, бледно-голубой халат и коричневые сандалии.</li>
+							<li class="mb-2">Во время арки Скайпии он носил под комбинезоном футболку оливкового цвета.</li>
+							<li class="mb-2">Во время арки Лонг Ринг Лонг Ленда, когда Луффи дрался с Фокси, он был одет в соломенную шляпу, жёлтую футболку с иероглифами и красное полотенце на шее.</li>
+							<li class="mb-2">Во время арки Эниес Лобби Усопп носил форму Согекинга, состоящую из особой жёлтой маски и красного плаща.</li>
+							<li class="mb-2">Во время арки Триллер Барка он был одет в тёмно-синий плащ, тёмно-синюю шляпу с красной внутренней стороной и ожерелье из чеснока.</li>
+							<li class="mb-2">Во время арки Архипелага Сабаоди он носил светло-голубую рубашку, зелёные бриджи с жёлтым цветочным узором и шапку с сине-белыми горизонтальными полосами.</li>
+						</ul>
+
+						<h5 class="border-bottom pb-2 mb-4">После таймскипа</h5>
+						<p>После двухлетнего таймскипа, Усопп похудел и отрастил волосы. Кроме того, он вырос, развил мускулатуру и, как следствие, стал более «мужественным».</p>
+						<p>Теперь на шее Усоппа висят новые очки (его снайперские очки не были показаны) и появились наушники. У него выросла маленькая козлиная бородка, и он стал носить белую солнцезащитную шляпу, новые дутые желтые штаны с красными подтяжками и сапоги.</p>
+						<p>Его старый жёлтый ранец был заменен на красный, но он до сих пор носит всё тот же бело-синий нарукавник на левой руке</p>
+						<ul class="t-white">
+							<li class="mb-2">Во время Арки Панк Хазарда, он носил фиолетовое пальто со светлыми голубыми линиями по бокам, которое он снял с одного из членов Патрульного Взвода Кентавров Коричневой Бороды.</li>
+							<li class="mb-2">Во время арки Дресс Розы, он надел оранжевую открытую куртку с белыми кругами на рукавах и красный шлем с длинными концами, которую он использовал, чтобы гномы поверили в его родство с Ноландом.</li>
+							<li class="mb-2">Во время арки Дзо на нём была светло-зелёная рубашка с короткими рукавами, незастёгнутая на четверть, с короткими рукавами и чёрными линиями на середине каждого рукава, а на голове тёмно-зелёная кепка с его защитными очками на ней.</li>
+							<li>В начале арки страны Вано Усопп носит светло-голубую юкату в чёрно-белую полоску внизу, а также зелёную бандану, украшенную лягушкой и накладную седую бороду.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="text-light container" style="background-color: #1f1f1f; border-radius: 15px;">
+			<div class="container py-4 rounded">
+					<div class="row  justify-content-around">
+						<div class="col-md-6">
+							<ul class="list-inline text-center d-flex justify-content-between">
+									<li class="list-inline-item"><a class="text-danger-hover" href="../../index.html">Главная</a></li>
+									<li class="list-inline-item"><a class="text-danger-hover" href="../../anime.html">Аниме</a></li>
+									<li class="list-inline-item"><a class="text-danger-hover" href="../../manga.html">Манга</a></li>
+									<li class="list-inline-item"><a class="text-danger-hover" href="../../characters.html">Персонажи</a></li>
+							</ul>
+					</div>
+					</div>
+			</div>
+			<div class="text-center p-3 rounded">
+					&copy; 2023 Библиотека One Piece
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+</html>
