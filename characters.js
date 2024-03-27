@@ -416,11 +416,11 @@ function changeGroup(group) {
 	charactersData[group].forEach(function(character) {
 		var cardHtml = `
 				<div class="col mb-4">
-						<div class="card text-bg-dark shadow-sm bg-body-tertiary position-relative overflow-hidden">
-								<img src="${character.image}" class="img-fluid object-fit-cover" style="height: 300px;" alt="...">
-								<div class="card-img-overlay d-flex align-items-end">
-										<a href="${character.link}"><p class="card-title card-black stretched-link text-danger-hover">${character.name}</p></a>
-								</div>
+					<div class="card text-bg-dark shadow-sm bg-body-tertiary position-relative overflow-hidden">
+							<img src="${character.image}" class="img-fluid object-fit-cover skake" style="height: 300px;" alt="...">
+							<div class="shake card-img-overlay d-flex align-items-end">
+								<a href="${character.link}"><p class="card-title card-black stretched-link text-danger-hover">${character.name}</p></a>
+							</div>
 						</div>
 				</div>
 		`;

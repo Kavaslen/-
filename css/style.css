@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "AnimeAceBold";
   src: url("/fonts/AnimeAceBold.eot");
   src: local("AnimeAceBold"), local("Anime Ace Bold"),
@@ -12,8 +12,8 @@
   font-family: "AnimeAceRegular";
   src: url("/fonts/AnimeAceRegular.eot");
   src: local("AnimeAceRegular"), local("Anime Ace Regular"),
-    url("/fonts/AnimeAceRegular.woff2") format("woff2"),
-    url("/fonts/AnimeAceRegular.woff") format("woff");
+    url("fonts/AnimeAceRegular.woff2") format("woff2"),
+    url("fonts/AnimeAceRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -26,27 +26,55 @@
     url("/fonts/AnimeAceItalic.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 @font-face {
-  font-family: "AnimeAceLight";
-  src: url("/fonts/AnimeAceLight.eot");
-  src: local("AnimeAceLight"), local("Anime Ace Light"),
-    url("/fonts/AnimeAceLight.woff2") format("woff2"),
-    url("/fonts/AnimeAceLight.woff") format("woff");
+  font-family: "animeacelight";
+  src: local("animeacelight"), local("animeacelight"),
+    url("/fonts/animeacelight.woff2") format("woff2"),
+    url("/fonts/animeacelight.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "animeacelight1";
+  src: local("animeaceligh1t"), local("animeacelight1"),
+    url("/fonts/animeacelight1.woff2") format("woff2"),
+    url("/fonts/animeacelight1.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: local("roboto"), local("roboto"),
+    url("/fonts/roboto.woff2") format("woff2"),
+    url("/fonts/roboto.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* @font-face {
+  font-family: 'anime_ace_v3regular';
+  src: url('anime_ace_v3-webfont.woff2') format('woff2'),
+       url('anime_ace_v3-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
 
 html {
   font-size: 16px;
 }
 
+
+
 body {
   font-size: 16px;
   color: #fff;
   background-color: #161616;
-  font-family: "AnimeAceLight", sans-serif;
+  font-family: "roboto";
 }
 
 p {
@@ -165,4 +193,65 @@ a {
 
 .t-white {
 	color: white;
+}
+
+.shake:hover {
+	animation: shake 1s !important;
+  animation-iteration-count: infinite !important;
+	z-index: 1;
+}
+
+.shake-usopp:hover {
+	animation: shake 0.1s !important;
+	animation-iteration-count: infinite !important;
+	z-index: 1;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 30px;
+	transition: .3s ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: #323232;
+}
+
+.btn-danger {
+	transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.btn-danger:hover {
+	border-color: #323232 !important;
+  background-color: #323232 !important;
+}
+
+nav {
+  background-color: #1f1f1f !important;
+
 }
